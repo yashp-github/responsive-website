@@ -1,0 +1,46 @@
+@import "./layouts/card";
+@import "./layouts/common";
+@import "./layouts/form";
+@import "./layouts/header";
+@import "./layouts/modal";
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.side-image{
+  width: 15rem;
+  height: 15rem;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+      flex-direction: row;
+    
+    & > * {
+      flex-basis: 100%;
+    }
+  
+    & > * + * {
+      margin-left: 2em;
+    }
+  }
+}
+
+.narrow-container {
+  max-width: 34rem;
+}
+

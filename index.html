@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="styles/css/normalize.css" />
+    <link rel="stylesheet" href="styles/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Shop</title>
+</head>
+
+<body>
+
+    <!-- Top navbar -->
+    <div class="mobile-top-nav">
+        <span href="javascript:void(0);" class="hamburger-icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </span>
+    </div>
+    <div class="top-nav" id="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+
+    <!-- Header section -->
+    <section class="text-center">
+        <div class="container narrow-container">
+            <p>Lorem, ipsum dolor.</p>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                aperiam inventore nemo, asperiores dolorem nisi voluptate omnis
+                quam sit doloremque expedita architecto dicta, at consequatur.
+            </h2>
+        </div>
+    </section>
+
+    <!-- Section with three columns images -->
+    <section class="bg-light-grey">
+        <div class="container">
+            <h2 class="text-center">Quality Designs</h2>
+            <div class="split">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                        aperiam inventore nemo, asperiores dolorem nisi voluptate omnis
+                        quam sit doloremque expedita architecto dicta, at consequatur.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        80 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                        aperiam inventore nemo, asperiores dolorem nisi voluptate omnis
+                        quam sit doloremque expedita architecto dicta, at consequatur.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Eum quisquam deleniti facere fugit. Vero quidem sunt fuga fugit ea
+                        voluptatum placeat ullam eveniet, minima sed veritatis laboriosam.
+                        Quia cumque est cupiditate quod eum?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section with two side images -->
+    <section>
+        <div class="container">
+            <div class="split">
+                <div>
+                    <img class="side-image" src="assets/earphone.png" alt="earphone" />
+                </div>
+                <div>
+                    <h2>Made custom for you</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                        ipsum dicta fuga vero aliquam! Officiis?
+                    </p>
+                </div>
+                <div>
+                    <img class="side-image" src="assets/watch.png" alt="watch" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section with one side images -->
+    <section class="bg-light-grey">
+        <div class="container">
+            <div class="split">
+                <div>
+                    <img class="side-image" src="assets/shoes.png" alt="shoes" />
+                </div>
+                <div>
+                    <h2>Created with care</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+                        id hic at vel voluptatem reiciendis aut, esse aperiam? Quia
+                        aperiam nesciunt sint iste laboriosam quibusdam minus molestias
+                        blanditiis esse!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="card">
+            <img src="assets/shoes.png" />
+            <h3>Shoes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h6>$100.00</h6>
+            <button id="buyBtn" class="card-button" onclick="openModal()">
+                Buy Now
+            </button>
+        </div>
+        <div class="card">
+            <img src="assets/earphone.png" />
+            <h3>Earphone</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h6>$40.00</h6>
+            <button class="card-button" onclick="openModal()">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="assets/watch.png" />
+            <h3>Watch</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h6>$70.84</h6>
+            <button class="card-button" onclick="openModal()">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modalForm" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="form-container">
+                <form onsubmit="closeModal(event)">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="mobile">Mobile Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="mobile" name="mobile" placeholder="+911234567890" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" name="email" placeholder="test@mail.com" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="address" name="address" placeholder="Your address"
+                                style="height: 200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js" />
+</body>
+</html>
